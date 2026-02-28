@@ -50,7 +50,7 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             className="font-heading text-4xl md:text-5xl lg:text-7xl font-bold text-background leading-tight max-w-4xl mx-auto"
           >
-            Luxury experiences. Tailor-made trips
+            Luxury experiences. Tailor-made trips---- prueba1
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
