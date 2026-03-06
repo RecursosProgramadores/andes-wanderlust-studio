@@ -5,10 +5,10 @@ import { tours, destinations, testimonials } from "@/data/tours";
 import { allBlogPosts } from "@/data/blogs";
 import { Star, Clock, Shield, Users, Sparkles, MapPin, ArrowRight, ChevronLeft, ChevronRight, Quote, Calendar } from "lucide-react";
 import heroImg from "@/assets/hero-machu-picchu.jpg";
-import destPeru from "@/assets/dest-peru.jpg";
-import destBolivia from "@/assets/dest-bolivia.jpg";
-import destChile from "@/assets/dest-chile.jpg";
-import destEcuador from "@/assets/dest-ecuador.jpg";
+import destPeru from "@/assets/paises/peru.jpg";
+import destBolivia from "@/assets/paises/Bolivia.jpg";
+import destChile from "@/assets/paises/chile.jpg";
+import destEcuador from "@/assets/paises/ecuador.jpg";
 import destAmazon from "@/assets/dest-amazon.jpg";
 import tourColca from "@/assets/tour-colca.jpg";
 import tourTiticaca from "@/assets/tour-titicaca.jpg";
@@ -50,7 +50,7 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             className="font-heading text-4xl md:text-5xl lg:text-7xl font-bold text-background leading-tight max-w-4xl mx-auto"
           >
-            Luxury experiences. Tailor-made trips
+            Luxury experiences. Tailor-made trips----prueba destino
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -187,7 +187,7 @@ const Index = () => {
                   <img
                     src={destImages[dest.name]}
                     alt={`Luxury travel destination ${dest.name}`}
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
