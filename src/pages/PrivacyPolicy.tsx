@@ -1,11 +1,16 @@
 import React from "react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { motion } from "framer-motion";
 import { ShieldCheck, Lock, Eye, FileText } from "lucide-react";
 
 const PrivacyPolicy = () => {
     return (
         <Layout>
+            <SEO
+                title="Privacy Policy | Machu Picchu Travel Tour"
+                description="Our privacy policy explains how we protect your personal information at Machu Picchu Travel Tour."
+            />
             <section className="relative pt-40 pb-20 bg-[#e6c64f] overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black" />
@@ -16,7 +21,7 @@ const PrivacyPolicy = () => {
                         animate={{ opacity: 1, y: 0 }}
                     >
                         <h1 className="font-heading text-4xl lg:text-7xl font-black text-black mb-6 uppercase tracking-tighter">Privacy <span className="text-foreground italic">Policy</span></h1>
-                        <p className="text-black/60 text-lg italic tracking-widest uppercase font-bold text-sm">Your privacy is our priority at Andean Majesty.</p>
+                        <p className="text-black/60 text-lg italic tracking-widest uppercase font-bold text-sm">Your privacy is our priority at Machu Picchu Travel Tour.</p>
                     </motion.div>
                 </div>
             </section>
@@ -29,7 +34,7 @@ const PrivacyPolicy = () => {
                                 <h2 className="text-2xl font-bold uppercase tracking-tight">Introduction</h2>
                             </div>
                             <p>
-                                At Andean Majesty, we are committed to protecting the privacy and security of our clients. This Privacy Policy describes how we collect, use, and protect your personal information when you use our website or book our luxury travel services.
+                                At Machu Picchu Travel Tour, we are committed to protecting the privacy and security of our clients. This Privacy Policy describes how we collect, use, and protect your personal information when you use our website or book our luxury travel services.
                             </p>
                         </section>
 

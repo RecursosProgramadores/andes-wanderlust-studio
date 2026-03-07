@@ -3,6 +3,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { MapPin, Filter, X } from "lucide-react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { tours } from "@/data/tours";
 import heroCusco from "@/assets/hero-cusco.jpg";
 
@@ -76,6 +77,10 @@ const Tours = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Luxury Travel Packages | Machu Picchu Travel Tour"
+        description="Explore our collection of luxury travel packages through Peru, Bolivia, Chile, and Ecuador. Handcrafted itineraries for extraordinary journeys with Machu Picchu Travel Tour."
+      />
       {/* Hero */}
       <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden">
         <img src={heroCusco} alt="Cusco cityscape luxury travel" className="absolute inset-0 w-full h-full object-cover" />

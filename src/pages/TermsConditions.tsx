@@ -1,11 +1,16 @@
 import React from "react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Scale, CreditCard, AlertCircle, UserCheck } from "lucide-react";
 
 const TermsConditions = () => {
     return (
         <Layout>
+            <SEO
+                title="Terms & Conditions | Machu Picchu Travel Tour"
+                description="The guidelines and policies for your luxury journey with Machu Picchu Travel Tour."
+            />
             <section className="relative pt-40 pb-20 bg-[#e6c64f] overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black" />
@@ -16,7 +21,7 @@ const TermsConditions = () => {
                         animate={{ opacity: 1, y: 0 }}
                     >
                         <h1 className="font-heading text-4xl lg:text-7xl font-black text-black mb-6 uppercase tracking-tighter">Terms & <span className="text-foreground italic">Conditions</span></h1>
-                        <p className="text-black/60 text-lg italic tracking-widest uppercase font-bold text-sm">The guidelines for your luxury journey with Andean Majesty.</p>
+                        <p className="text-black/60 text-lg italic tracking-widest uppercase font-bold text-sm">The guidelines for your luxury journey with Machu Picchu Travel Tour.</p>
                     </motion.div>
                 </div>
             </section>
@@ -55,7 +60,7 @@ const TermsConditions = () => {
                                 <h2 className="text-2xl font-bold uppercase tracking-tight">Responsibility</h2>
                             </div>
                             <p>
-                                Andean Majesty acts as an intermediary for transport, accommodation, and other services. We are not responsible for delays, accidents, or losses caused by force majeure (strikes, weather conditions, or local regulations). We strongly recommend all travelers to obtain comprehensive travel insurance.
+                                Machu Picchu Travel Tour acts as an intermediary for transport, accommodation, and other services. We are not responsible for delays, accidents, or losses caused by force majeure (strikes, weather conditions, or local regulations). We strongly recommend all travelers to obtain comprehensive travel insurance.
                             </p>
                         </section>
 

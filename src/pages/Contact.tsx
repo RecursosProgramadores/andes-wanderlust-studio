@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Mail, Phone, MapPin, Send, ChevronRight, ChevronLeft, User, Globe, Plane, Info, Calendar as CalendarIcon, Users } from "lucide-react";
 import { useSearchParams } from "react-router-dom";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import heroCusco from "@/assets/hero-cusco.jpg";
 import whatsappIcon from "@/assets/logos/whatsapp.svg";
 import facebookIcon from "@/assets/logos/facebook.svg";
@@ -122,6 +123,10 @@ const Contact = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Contact Us | Machu Picchu Travel Tour"
+        description="Get in touch with our travel experts to start planning your dream luxury journey to Machu Picchu and South America."
+      />
       {/* Hero */}
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <img src={heroCusco} alt="Cusco landscape" className="absolute inset-0 w-full h-full object-cover" />

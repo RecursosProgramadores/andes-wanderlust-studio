@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, Clock, Check, X, ArrowLeft, ArrowRight, Calendar, Star, Phone } from "lucide-react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { tours } from "@/data/tours";
 import whatsappIcon from "@/assets/logos/whatsapp.svg";
 import {
@@ -44,7 +45,8 @@ const TourDetail = () => {
     return (
       <Layout>
         <div className="container mx-auto px-4 py-32 text-center">
-          <h1 className="font-heading text-3xl font-bold text-foreground">Tour Not Found</h1>
+          <SEO title="Tour Not Found | Machu Picchu Travel Tour" description="The requested luxury tour could not be found." />
+          <h2 className="font-heading text-3xl font-bold text-foreground">Tour Not Found</h2>
           <Link to="/tours" className="mt-4 inline-block text-primary hover:underline">← Back to Tours</Link>
         </div>
       </Layout>
@@ -60,6 +62,10 @@ const TourDetail = () => {
 
   return (
     <Layout>
+      <SEO
+        title={`${tour.title} | Machu Picchu Travel Tour`}
+        description={tour.shortDescription || tour.description.substring(0, 160)}
+      />
       {/* Hero */}
       <section className="relative h-[50vh] min-h-[400px] flex items-end overflow-hidden">
         <img src={tour.image} alt={`${tour.title} luxury tour`} className="absolute inset-0 w-full h-full object-cover" />

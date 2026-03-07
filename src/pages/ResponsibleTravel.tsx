@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Sun, ShieldCheck, Award, ChevronRight, Check } from "lucide-react";
 import destAmazon from "@/assets/dest-amazon.jpg";
@@ -32,6 +33,10 @@ const ResponsibleTravel = () => {
 
     return (
         <Layout>
+            <SEO
+                title="Responsible Travel | Machu Picchu Travel Tour"
+                description="Learn about our commitment to responsible and sustainable tourism at Machu Picchu Travel Tour."
+            />
             {/* 1. Immersive Hero Section */}
             <section className="relative h-[80vh] flex items-center overflow-hidden">
                 <div className="absolute inset-0">
@@ -118,7 +123,7 @@ const ResponsibleTravel = () => {
                                 Sustainable Tourism
                             </h3>
                             <p className="text-background/60 text-xl leading-relaxed font-medium italic">
-                                "Sustainable tourism is a fundamental aspect for Andean Majesty, given our commitment to preserving the environment, promoting community development and respecting local culture."
+                                "Sustainable tourism is a fundamental aspect for Machu Picchu Travel Tour, given our commitment to preserving the environment, promoting community development and respecting local culture."
                             </p>
                             <div className="pt-8">
                                 <button className="bg-[#e6c64f] text-black font-black uppercase tracking-[0.3em] px-10 py-5 rounded-2xl hover:brightness-110 active:scale-95 transition-all text-xs">

@@ -48,7 +48,11 @@ const navLinks: NavItem[] = [
   { label: "Contact", to: "/contact" },
 ];
 
-const Navbar = () => {
+interface NavbarProps {
+  isGold?: boolean;
+}
+
+const Navbar = ({ isGold = false }: NavbarProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [mobileSubmenu, setMobileSubmenu] = useState<string | null>(null);
@@ -71,12 +75,12 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [location.pathname]);
 
-  const isGoldPage = location.pathname.includes("privacy-policy") || location.pathname.includes("terms-conditions");
+  const isGoldPage = isGold || location.pathname.includes("privacy-policy") || location.pathname.includes("terms-conditions");
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${(isScrolled || isGoldPage) ? "shadow-card border-b border-black/10" : ""}`}>
       {/* Top Bar */}
-      <div className={`bg-black text-[#e6c64f] text-[10px] py-1.5 hidden lg:block border-b border-[#e6c64f]/10 transition-all duration-300 ${isScrolled ? "opacity-100" : "opacity-0 h-0 overflow-hidden py-0 border-0"}`}>
+      <div className={`bg-black text-[#e6c64f] text-[10px] py-1.5 hidden lg:block border-b border-[#e6c64f]/10 transition-all duration-300 ${(isScrolled || isGoldPage) ? "opacity-100" : "opacity-0 h-0 overflow-hidden py-0 border-0"}`}>
         <div className="container mx-auto px-4 lg:px-8 flex justify-end gap-6 font-bold uppercase tracking-widest">
           <a href="mailto:reservas@leadingperutravel.com" className="flex items-center gap-1.5 hover:text-white transition-colors">
             <Phone className="w-3 h-3" /> +51 984 509 207

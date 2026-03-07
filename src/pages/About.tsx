@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Heart, Eye, Leaf, Target } from "lucide-react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import aboutTeam from "@/assets/about-team.jpg";
 
 const fadeInUp = {
@@ -13,6 +14,10 @@ const fadeInUp = {
 const About = () => {
   return (
     <Layout>
+      <SEO
+        title="About Us | Machu Picchu Travel Tour"
+        description="Learn more about Machu Picchu Travel Tour and Leading Peru Travel. Over 15 years of experience crafting personalized luxury journeys in South America."
+      />
       {/* Hero */}
       <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <img src={aboutTeam} alt="Leading Peru Travel team with local Peruvian community" className="absolute inset-0 w-full h-full object-cover" />

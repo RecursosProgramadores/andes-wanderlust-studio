@@ -5,12 +5,13 @@ import FloatingButtons from "./FloatingButtons";
 interface LayoutProps {
   children: React.ReactNode;
   showPadding?: boolean;
+  navbarGold?: boolean;
 }
 
-const Layout = ({ children, showPadding = true }: LayoutProps) => {
+const Layout = ({ children, showPadding = true, navbarGold = false }: LayoutProps) => {
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
+      <Navbar isGold={navbarGold} />
       <main className="flex-1">{children}</main>
       <Footer />
       <FloatingButtons />

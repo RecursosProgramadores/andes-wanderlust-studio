@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Globe, MapPin, Calendar, Info, ThermometerSun, ShieldCheck, Banknote } from "lucide-react";
 import destEcuador from "@/assets/dest-ecuador.jpg";
@@ -8,6 +9,10 @@ import RelatedToursCarousel from "@/components/RelatedToursCarousel";
 const Ecuador = () => {
     return (
         <Layout>
+            <SEO
+                title="Luxury Travel in Ecuador | Machu Picchu Travel Tour"
+                description="Explore the Galápagos Islands and the Amazon in Ecuador with our bespoke luxury tours. Discover nature's paradise with Machu Picchu Travel Tour."
+            />
             {/* Hero Section */}
             <section className="relative h-[40vh] min-h-[400px] flex items-center justify-center overflow-hidden">
                 <img

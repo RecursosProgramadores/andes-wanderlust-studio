@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Globe, Calendar, Star } from "lucide-react";
 import destChile from "@/assets/dest-chile.jpg";
@@ -8,6 +9,10 @@ import RelatedToursCarousel from "@/components/RelatedToursCarousel";
 const Chile = () => {
     return (
         <Layout>
+            <SEO
+                title="Luxury Travel in Chile | Machu Picchu Travel Tour"
+                description="From the Atacama Desert to Patagonia, experience the best of Chile with our luxury travel packages. Unforgettable journeys with Machu Picchu Travel Tour."
+            />
             {/* Hero Section */}
             <section className="relative h-[40vh] min-h-[400px] flex items-center justify-center overflow-hidden">
                 <img

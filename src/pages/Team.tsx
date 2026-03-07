@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Mail, Phone, ChevronRight, Users, MapPin, Award, ShieldCheck, Star } from "lucide-react";
 import aboutTeam from "@/assets/about-team.jpg";
@@ -22,7 +23,7 @@ const Team = () => {
             image: destPeru,
             members: [
                 { name: "Julio Cesar Quispillo Uscamayta", role: "Founder and President", bio: "Trajectory and vision of the company leader, dedicated to excellence in luxury travel across South America." },
-                { name: "Marleni Cahuana Condori", role: "Co-Founder", bio: "Experience and passion for tourism in Peru, driving the foundational spirit of Andean Majesty." },
+                { name: "Marleni Cahuana Condori", role: "Co-Founder", bio: "Experience and passion for tourism in Peru, driving the foundational spirit of Machu Picchu Travel Tour." },
             ]
         },
         {
@@ -95,6 +96,10 @@ const Team = () => {
 
     return (
         <Layout>
+            <SEO
+                title="Our Team | Machu Picchu Travel Tour"
+                description="Meet the travel experts behind Machu Picchu Travel Tour. Our local team in Cusco is dedicated to creating your perfect luxury journey."
+            />
             {/* 1. Immersive Hero Section */}
             <section className="relative h-[80vh] flex items-center overflow-hidden">
                 <div className="absolute inset-0">
@@ -134,7 +139,7 @@ const Team = () => {
                                     All our agents are Peruvian, and from Cusco, no less. They know their region inside and out and can offer you exclusivity and the best services to Machu Picchu, Peru, and South America.
                                 </p>
                                 <p>
-                                    With years of traveling extensively throughout these destinations, you can always contact a Leading Peru Travel expert who knows the place you want to visit inside and out. They will explain your dream destination in detail and how you can enjoy wonderful moments there!
+                                    With years of traveling extensively throughout these destinations, you can always contact a Machu Picchu Travel Tour expert who knows the place you want to visit inside and out. They will explain your dream destination in detail and how you can enjoy wonderful moments there!
                                 </p>
                             </div>
                             <div className="flex flex-wrap gap-8 pt-4">

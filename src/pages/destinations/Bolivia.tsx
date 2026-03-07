@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Globe, MapPin, Calendar, Info, Ship } from "lucide-react";
 import destBolivia from "@/assets/dest-bolivia.jpg";
@@ -8,6 +9,10 @@ import RelatedToursCarousel from "@/components/RelatedToursCarousel";
 const Bolivia = () => {
     return (
         <Layout>
+            <SEO
+                title="Luxury Travel in Bolivia | Machu Picchu Travel Tour"
+                description="Discover the Salt Flats and the Andes in Bolivia with our exclusive luxury tours. Experience the magic of Bolivia with Machu Picchu Travel Tour."
+            />
             {/* Hero Section */}
             <section className="relative h-[40vh] min-h-[400px] flex items-center justify-center overflow-hidden">
                 <img

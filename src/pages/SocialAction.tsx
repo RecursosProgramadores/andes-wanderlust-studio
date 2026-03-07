@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Heart, Globe, Users, Shield, Award, Activity, HeartHandshake, UserPlus } from "lucide-react";
 import destPeru from "@/assets/dest-peru.jpg";
@@ -21,6 +22,10 @@ const SocialAction = () => {
 
     return (
         <Layout>
+            <SEO
+                title="Social Action | Machu Picchu Travel Tour"
+                description="Discover our commitment to social responsibility and community development in the high mountains of Peru."
+            />
             {/* 1. Immersive Hero Section */}
             <section className="relative h-[80vh] flex items-center overflow-hidden">
                 <div className="absolute inset-0">
@@ -90,7 +95,7 @@ const SocialAction = () => {
                                 Sustainable Tourism
                             </h3>
                             <p className="text-muted-foreground text-xl leading-relaxed font-medium">
-                                Sustainable tourism is a fundamental aspect for Leading Peru Travel. We are committed to preserving the environment, promoting community development, and respecting local culture. We contribute to the sustainable development of Peru ensures authentic and respectable experiences for our customers.
+                                Sustainable tourism is a fundamental aspect for Machu Picchu Travel Tour. We are committed to preserving the environment, promoting community development, and respecting local culture. We contribute to the sustainable development of Peru ensures authentic and respectable experiences for our customers.
                             </p>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 text-foreground font-black text-sm uppercase tracking-widest">
                                 <div className="flex items-center gap-4">

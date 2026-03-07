@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { motion, AnimatePresence, useScroll, useSpring } from "framer-motion";
 import { Calendar, Search, ArrowRight, Instagram, Mail, Phone, MapPin, Star, ChevronLeft, Share2, Twitter, Link as LinkIcon } from "lucide-react";
 import { allBlogPosts } from "@/data/blogs";
@@ -66,7 +67,7 @@ const Blog = () => {
     ];
 
     return (
-        <Layout>
+        <Layout navbarGold={!!selectedPost}>
             <AnimatePresence mode="wait">
                 {!selectedPost ? (
                     <motion.div
@@ -75,6 +76,10 @@ const Blog = () => {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                     >
+                        <SEO
+                            title="The Journal | Machu Picchu Travel Tour"
+                            description="Stories, guides, and inspiration for the discerning adventurer. Discover the latest travel insights from Machu Picchu Travel Tour."
+                        />
                         {/* Hero Section */}
                         <section className="relative h-[450px] flex items-center justify-center overflow-hidden">
                             <div className="absolute inset-0">
@@ -221,6 +226,10 @@ const Blog = () => {
                         exit={{ opacity: 0 }}
                         className="bg-background min-h-screen relative"
                     >
+                        <SEO
+                            title={`${selectedPost.title} | Machu Picchu Travel Tour`}
+                            description={selectedPost.excerpt}
+                        />
                         {/* Scroll Progress Bar */}
                         <motion.div
                             className="fixed top-16 lg:top-[calc(5.5rem+1.6rem)] left-0 right-0 h-1 bg-primary z-[60] origin-left"
@@ -243,8 +252,6 @@ const Blog = () => {
                                         <a href="https://www.facebook.com/Machupicchutraveltour" target="_blank" rel="noopener noreferrer">
                                             <img src={facebookIcon} alt="Facebook" className="w-4 h-4 text-muted-foreground cursor-pointer hover:text-primary transition-all hover:scale-110 opacity-70 hover:opacity-100" />
                                         </a>
-                                        <Twitter className="w-4 h-4 text-muted-foreground cursor-pointer hover:text-primary transition-all hover:scale-110" />
-                                        <Share2 className="w-4 h-4 text-muted-foreground cursor-pointer hover:text-primary transition-all hover:scale-110" />
                                     </div>
                                 </div>
                             </div>

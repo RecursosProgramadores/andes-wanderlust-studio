@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Globe, MapPin, Landmark, Utensils, Star, Heart } from "lucide-react";
 import heroCusco from "@/assets/hero-cusco.jpg";
@@ -8,6 +9,10 @@ import RelatedToursCarousel from "@/components/RelatedToursCarousel";
 const Peru = () => {
     return (
         <Layout>
+            <SEO
+                title="Luxury Travel in Peru | Machu Picchu Travel Tour"
+                description="Discover iconic and imperial Peru with Machu Picchu Travel Tour. From Machu Picchu to the Amazon, experience luxury travel at its finest."
+            />
             {/* Hero Section */}
             <section className="relative h-[40vh] min-h-[400px] flex items-center justify-center overflow-hidden">
                 <img

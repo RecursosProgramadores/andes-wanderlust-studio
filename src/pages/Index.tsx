@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { tours, destinations, testimonials } from "@/data/tours";
 import { allBlogPosts } from "@/data/blogs";
 import { Star, Clock, Shield, Users, Sparkles, MapPin, ArrowRight, ChevronLeft, ChevronRight, Quote, Calendar } from "lucide-react";
@@ -35,6 +36,10 @@ const Index = () => {
 
   return (
     <Layout showPadding={false}>
+      <SEO
+        title="Machu Picchu Travel Tour | Luxury Experiences & Tailor-made Trips"
+        description="Experience Peru through exclusive, custom-designed luxury journeys. Over 15 years of passion creating unforgettable dream journeys to Machu Picchu and beyond."
+      />
       {/* HERO */}
       <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
         <img
