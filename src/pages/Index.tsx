@@ -71,13 +71,13 @@ const Index = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <a
-              href="#featured-tours"
+            <Link
+              to="/packages"
               className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary/90 transition-all shadow-luxury"
             >
               Explore Luxury Packages
               <ArrowRight className="w-5 h-5" />
-            </a>
+            </Link>
             <a
               href="https://wa.me/51984509207?text=Hi!%20I'm%20interested%20in%20a%20luxury%20tour%20to%20Machu%20Picchu"
               target="_blank"
@@ -217,7 +217,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredTours.map((tour, i) => (
               <motion.div key={tour.id} {...fadeInUp} transition={{ ...fadeInUp.transition, delay: i * 0.1 }}>
-                <Link to={`/tours/${tour.slug}`} className="group block bg-background rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500">
+                <Link to={`/packages/${tour.slug}`} className="group block bg-background rounded-xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500">
                   <div className="relative overflow-hidden aspect-[3/4]">
                     <img
                       src={tour.image}
@@ -252,7 +252,7 @@ const Index = () => {
           </div>
           <motion.div {...fadeInUp} className="text-center mt-10">
             <Link
-              to="/tours"
+              to="/packages"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-all shadow-luxury"
             >
               View All Tours <ArrowRight className="w-4 h-4" />

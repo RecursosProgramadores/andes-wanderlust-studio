@@ -130,7 +130,7 @@ const Tours = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                 {filtered.map((tour, i) => (
                   <motion.div key={tour.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: i * 0.05 }}>
-                    <Link to={`/tours/${tour.slug}`} className="group block bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500">
+                    <Link to={`/packages/${tour.slug}`} className="group block bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-500">
                       <div className="relative aspect-[3/4] overflow-hidden">
                         <img
                           src={tour.image}

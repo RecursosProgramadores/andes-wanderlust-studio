@@ -5,7 +5,10 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/andes-wanderlust-studio/",
+  //para github pages 
+  //base: "/andes-wanderlust-studio/",
+  //para local
+  base: "/",
 
   server: {
     host: "::",

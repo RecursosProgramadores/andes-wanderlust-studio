@@ -17,12 +17,12 @@ const navLinks: NavItem[] = [
   { label: "Home", to: "/" },
   {
     label: "South America travel packages",
-    to: "/tours",
+    to: "/packages",
     submenu: [
-      { label: "Peru Tours", to: "/tours?country=Peru" },
-      { label: "Ecuador Tours", to: "/tours?country=Ecuador" },
-      { label: "Bolivia Tours", to: "/tours?country=Bolivia" },
-      { label: "Chile Tours", to: "/tours?country=Chile" },
+      { label: "Peru Tours", to: "/packages?country=Peru" },
+      { label: "Ecuador Tours", to: "/packages?country=Ecuador" },
+      { label: "Bolivia Tours", to: "/packages?country=Bolivia" },
+      { label: "Chile Tours", to: "/packages?country=Chile" },
     ]
   },
   {

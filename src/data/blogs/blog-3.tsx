@@ -3,8 +3,8 @@ import destEcuador from "@/assets/dest-ecuador.jpg";
 
 export const blogPost3: BlogPost = {
     id: 3,
-    slug: "luxury-travel-galapagos",
-    title: "Luxury Travel to the Galápagos Islands: Exclusive Adventures in a Natural Paradise",
+    slug: "luxury-travel-peru-bolivia-ecuador-chile-galapagos",
+    title: "Luxury Travel to Peru, Bolivia, Ecuador, and Chile: The Galápagos Islands Exclusive",
     date: "February 24, 2026",
     category: "Wildlife",
     image: destEcuador,

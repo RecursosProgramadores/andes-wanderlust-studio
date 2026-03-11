@@ -3,8 +3,8 @@ import heroImg from "@/assets/hero-machu-picchu.jpg";
 
 export const blogPost4: BlogPost = {
     id: 4,
-    slug: "machu-picchu-tickets-complete-guide-2026",
-    title: "Machu Picchu Tickets: Your Complete Guide to Securing Entry to the Inca Citadel",
+    slug: "ultimate-machu-picchu-tickets-guide-2026",
+    title: "The Ultimate 2026 Guide to Machu Picchu: Secure Your Entry to the Inca Citadel",
     date: "March 5, 2026",
     category: "Planning",
     image: heroImg,

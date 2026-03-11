@@ -34,13 +34,8 @@ const SEO = ({ title, description, canonical }: SEOProps) => {
         }
 
         // Canonical link
-        /* 
-           Note: window.location.hash is used because the project uses HashRouter.
-           For a cleaner canonical, we use the base domain + the hash route normalized.
-        */
         let link = document.querySelector("link[rel='canonical']");
-        const currentHash = window.location.hash.replace("#", "");
-        const canonicalUrl = canonical || `https://machupicchutraveltour.com${currentHash}`;
+        const canonicalUrl = canonical || `https://machupicchutraveltour.com${window.location.pathname}`;
 
         if (!link) {
             link = document.createElement("link");

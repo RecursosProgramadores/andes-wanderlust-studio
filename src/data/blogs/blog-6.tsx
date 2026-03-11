@@ -3,8 +3,8 @@ import heroImg from "@/assets/hero-cusco.jpg";
 
 export const blogPost6: BlogPost = {
     id: 6,
-    slug: "best-things-to-do-in-peru-luxury-guide",
-    title: "Best Things to Do in Peru: Exclusive Luxury Experiences for Discerning Travelers",
+    slug: "unforgettable-peru-curated-luxury-experiences",
+    title: "Unforgettable Peru: Curated Luxury Experiences for the Modern Adventurer",
     date: "March 5, 2026",
     category: "Travel Guide",
     image: heroImg,

@@ -52,7 +52,7 @@ const RelatedToursCarousel: React.FC<RelatedToursCarouselProps> = ({ country }) 
                         transition={{ delay: 0.2 }}
                     >
                         <Link
-                            to="/tours"
+                            to="/packages"
                             className="inline-flex items-center gap-2 text-primary font-bold uppercase tracking-widest text-xs hover:gap-3 transition-all"
                         >
                             View All Tours <ArrowRight className="w-4 h-4" />
@@ -79,7 +79,7 @@ const RelatedToursCarousel: React.FC<RelatedToursCarouselProps> = ({ country }) 
                                         className="h-full"
                                     >
                                         <Link
-                                            to={`/tours/${tour.slug}`}
+                                            to={`/packages/${tour.slug}`}
                                             className="group block bg-background rounded-3xl overflow-hidden shadow-card hover:shadow-luxury transition-all duration-500 h-full border border-border/50"
                                         >
                                             <div className="relative aspect-[4/5] overflow-hidden">

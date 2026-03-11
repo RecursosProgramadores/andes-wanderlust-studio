@@ -3,8 +3,8 @@ import heroCusco from "@/assets/hero-cusco.jpg";
 
 export const blogPost1: BlogPost = {
     id: 1,
-    slug: "machu-picchu-lost-city",
-    title: "Machu Picchu Travel Tour: Explore the Lost City of the Incas",
+    slug: "luxury-travel-peru-bolivia-ecuador-chile-machu-picchu",
+    title: "Luxury Travel to Peru, Bolivia, Ecuador, and Chile: Machu Picchu's Lost City Revealed",
     date: "February 24, 2026",
     category: "Machu Picchu",
     image: heroCusco,

@@ -3,8 +3,8 @@ import heroImg from "@/assets/dest-peru.jpg";
 
 export const blogPost5: BlogPost = {
     id: 5,
-    slug: "authentic-peruvian-ceviche-recipe-guide",
-    title: "Authentic Peruvian Ceviche Recipe: Discover Peru Through Food",
+    slug: "art-peruvian-ceviche-gastronomy-guide",
+    title: "The Art of Peruvian Ceviche: A Masterclass in South American Gastronomy",
     date: "March 5, 2026",
     category: "Gastronomy",
     image: heroImg,

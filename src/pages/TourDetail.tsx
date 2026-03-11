@@ -47,7 +47,7 @@ const TourDetail = () => {
         <div className="container mx-auto px-4 py-32 text-center">
           <SEO title="Tour Not Found | Machu Picchu Travel Tour" description="The requested luxury tour could not be found." />
           <h2 className="font-heading text-3xl font-bold text-foreground">Tour Not Found</h2>
-          <Link to="/tours" className="mt-4 inline-block text-primary hover:underline">← Back to Tours</Link>
+          <Link to="/packages" className="mt-4 inline-block text-primary hover:underline">← Back to Tours</Link>
         </div>
       </Layout>
     );
@@ -71,7 +71,7 @@ const TourDetail = () => {
         <img src={tour.image} alt={`${tour.title} luxury tour`} className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/30 to-transparent" />
         <div className="relative z-10 container mx-auto px-4 pb-10">
-          <Link to="/tours" className="inline-flex items-center gap-1 text-background/70 hover:text-background text-sm mb-4 transition-colors">
+          <Link to="/packages" className="inline-flex items-center gap-1 text-background/70 hover:text-background text-sm mb-4 transition-colors">
             <ArrowLeft className="w-4 h-4" /> Back to Tours
           </Link>
           <h1 className="font-heading text-3xl lg:text-5xl font-bold text-background">{tour.title}</h1>
@@ -204,22 +204,59 @@ const TourDetail = () => {
                               {dayHighlight}
                             </p>
 
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div className="block overflow-hidden lg:overflow-visible">
+                              {/* Day Image (Floated Right on Desktop) */}
+                              {dayData.image && (
+                                <div className="hidden lg:block float-right ml-10 mb-6 w-[45%] group/img relative">
+                                  <div className="rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] border-8 border-white aspect-[4/5] relative">
+                                    <img
+                                      src={dayData.image}
+                                      alt={dayData.title}
+                                      className="w-full h-full object-cover transition-transform duration-1000 group-hover/img:scale-110"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+
+                                    <div className="absolute bottom-6 left-6 right-6">
+                                      <p className="text-white/90 text-[10px] font-bold uppercase tracking-[0.3em] mb-1.5 opacity-80">Day {dayData.day}</p>
+                                      <p className="text-white text-base md:text-lg font-heading font-bold leading-tight uppercase tracking-wide">{dayData.title}</p>
+                                    </div>
+                                  </div>
+                                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-full -z-10 blur-2xl group-hover/img:bg-primary/20 transition-colors" />
+                                </div>
+                              )}
+
+                              {/* Mobile Image (Normal flow) */}
+                              {dayData.image && (
+                                <div className="lg:hidden mb-8 group/img relative">
+                                  <div className="rounded-2xl overflow-hidden shadow-xl border-4 border-white aspect-video relative">
+                                    <img
+                                      src={dayData.image}
+                                      alt={dayData.title}
+                                      className="w-full h-full object-cover"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                                    <div className="absolute bottom-4 left-4 right-4">
+                                      <p className="text-white/80 text-[8px] font-bold uppercase tracking-widest mb-1">Day {dayData.day}</p>
+                                      <p className="text-white text-sm font-heading font-bold uppercase">{dayData.title}</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              )}
+
                               {/* Body Text */}
-                              <div className="whitespace-pre-line text-foreground/80 font-normal leading-relaxed text-[16px] md:text-lg">
+                              <div className="whitespace-pre-line text-foreground/80 font-normal leading-relaxed text-[16px] md:text-lg text-justify lg:text-left">
                                 {dayRest.join('\n\n')}
                               </div>
 
-                              {/* Day Image */}
-                              {dayData.image && (
-                                <div className="rounded-2xl overflow-hidden shadow-xl border-2 border-white aspect-video lg:aspect-square">
-                                  <img
-                                    src={dayData.image}
-                                    alt={dayData.title}
-                                    className="w-full h-full object-cover"
-                                  />
+                              {/* Badges (Below text or wrapped) */}
+                              <div className="pt-6 flex flex-wrap gap-4 clear-both">
+                                <div className="flex items-center gap-2 px-4 py-2 bg-secondary/10 rounded-full text-secondary text-[10px] font-bold uppercase tracking-wider">
+                                  <Clock className="w-3 h-3" /> Full Day Experience
                                 </div>
-                              )}
+                                <div className="flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary text-[10px] font-bold uppercase tracking-wider">
+                                  <MapPin className="w-3 h-3" /> Expert Local Guide
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </AccordionContent>

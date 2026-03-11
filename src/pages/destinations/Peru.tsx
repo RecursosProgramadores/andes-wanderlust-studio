@@ -48,7 +48,7 @@ const Peru = () => {
                             <div className="max-w-4xl">
                                 <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
                                     <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 inline-block">Iconic & Imperial</span>
-                                    <h2 className="text-5xl lg:text-7xl font-bold text-white mb-6">Peru: Where History & Luxury Meet</h2>
+                                    <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Peru: Where History & Luxury Meet</h2>
                                     <p className="text-white/80 text-xl leading-relaxed max-w-2xl">
                                         From the iconic Machu Picchu high in the Andes to the world-renowned gastronomic scene in Lima.
                                     </p>

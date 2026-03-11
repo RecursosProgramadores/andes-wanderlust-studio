@@ -3,7 +3,7 @@ import tourColca from "@/assets/tour-colca.jpg";
 
 export const blogPost2: BlogPost = {
     id: 2,
-    slug: "luxury-travel-south-america",
+    slug: "luxury-travel-peru-bolivia-ecuador-chile-south-america",
     title: "Luxury Travel to Peru, Bolivia, Ecuador, and Chile: Explore South America in Style",
     date: "February 24, 2026",
     category: "Luxury Travel",

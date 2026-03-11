@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import { motion, AnimatePresence, useScroll, useSpring } from "framer-motion";
@@ -14,11 +14,17 @@ import destBolivia from "@/assets/dest-bolivia.jpg";
 import destEcuador from "@/assets/dest-ecuador.jpg";
 import destChile from "@/assets/dest-chile.jpg";
 
-import { Link } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 
 const Blog = () => {
-    const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
+    const { slug } = useParams();
+    const navigate = useNavigate();
     const [searchQuery, setSearchQuery] = useState("");
+
+    const selectedPost = useMemo(() => {
+        if (!slug) return null;
+        return allBlogPosts.find(p => p.slug === slug) || null;
+    }, [slug]);
 
     const { scrollYProgress } = useScroll();
     const scaleX = useSpring(scrollYProgress, {
@@ -29,10 +35,10 @@ const Blog = () => {
 
     // Scroll to top when post is selected
     useEffect(() => {
-        if (selectedPost) {
+        if (slug) {
             window.scrollTo({ top: 0, behavior: "smooth" });
         }
-    }, [selectedPost]);
+    }, [slug]);
 
     const filteredPosts = allBlogPosts.filter(post =>
         post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -131,7 +137,7 @@ const Blog = () => {
                                                     whileInView={{ opacity: 1, y: 0 }}
                                                     viewport={{ once: true }}
                                                     transition={{ delay: index * 0.1, duration: 0.6 }}
-                                                    onClick={() => setSelectedPost(post)}
+                                                    onClick={() => navigate(`/blog/${post.slug}`)}
                                                     className="group cursor-pointer flex flex-col bg-card rounded-[2.5rem] overflow-hidden shadow-2xl border border-border/40 hover:border-primary/30 transition-all duration-500 transform hover:-translate-y-3"
                                                 >
                                                     <div className="aspect-[3/4] overflow-hidden relative">
@@ -240,7 +246,7 @@ const Blog = () => {
                         <div className="sticky top-16 lg:top-[calc(5rem+1.5rem)] z-50 bg-background/80 backdrop-blur-xl border-b border-border/40 py-4 shadow-sm">
                             <div className="container mx-auto px-4 lg:px-8 flex items-center justify-between">
                                 <button
-                                    onClick={() => setSelectedPost(null)}
+                                    onClick={() => navigate("/blog")}
                                     className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground hover:text-primary transition-all group py-2 px-4 rounded-full hover:bg-primary/5 border border-transparent hover:border-primary/10"
                                 >
                                     <ChevronLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" /> Return to Journal
@@ -264,8 +270,21 @@ const Blog = () => {
                                     {selectedPost.category}
                                 </span>
                             </motion.div>
-                            <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl font-black text-foreground mb-12 leading-[1.1] tracking-tighter">
-                                {selectedPost.title}
+                            <h1 className="font-heading font-black text-foreground mb-12 leading-[1.2] tracking-tighter">
+                                {selectedPost.title.includes(':') ? (
+                                    <div className="flex flex-col gap-4 items-center">
+                                        <span className="text-primary/70 text-xs md:text-sm lg:text-base uppercase tracking-[0.4em] font-body font-bold max-w-3xl">
+                                            {selectedPost.title.split(':')[0]}
+                                        </span>
+                                        <span className="text-3xl md:text-5xl lg:text-6xl block italic font-serif">
+                                            {selectedPost.title.split(':')[1]}
+                                        </span>
+                                    </div>
+                                ) : (
+                                    <span className="text-3xl md:text-5xl lg:text-6xl block italic font-serif">
+                                        {selectedPost.title}
+                                    </span>
+                                )}
                             </h1>
                             <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-sm text-muted-foreground border-y border-border/60 py-10 font-black tracking-widest uppercase">
                                 <div className="flex items-center gap-3">
@@ -296,11 +315,24 @@ const Blog = () => {
                                 {selectedPost.sections.map((section, idx) => (
                                     <div key={idx} className="mb-16">
                                         {section.title && (
-                                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-foreground mb-8 mt-20 leading-tight tracking-tight border-l-8 border-primary pl-8">
-                                                {section.title}
-                                            </h2>
+                                            <div className="mb-10 mt-20 border-l-4 border-primary/30 pl-8 group">
+                                                {section.title.includes(':') ? (
+                                                    <div className="flex flex-col gap-2">
+                                                        <span className="text-primary/60 text-[10px] md:text-xs uppercase tracking-[0.3em] font-body font-black">
+                                                            {section.title.split(':')[0]}
+                                                        </span>
+                                                        <h2 className="font-heading text-2xl md:text-4xl lg:text-5xl font-extrabold text-foreground leading-tight tracking-tight italic transition-colors group-hover:text-primary/90">
+                                                            {section.title.split(':')[1]}
+                                                        </h2>
+                                                    </div>
+                                                ) : (
+                                                    <h2 className="font-heading text-lg md:text-xl font-bold text-foreground/80 leading-tight tracking-tight italic">
+                                                        {section.title}
+                                                    </h2>
+                                                )}
+                                            </div>
                                         )}
-                                        <p className="leading-[1.8] mb-8 whitespace-pre-wrap">
+                                        <p className={`leading-[1.8] mb-10 whitespace-pre-wrap ${idx === 0 ? "text-xl md:text-3xl font-light italic text-foreground/80 first-letter:text-6xl first-letter:font-heading first-letter:mr-3 first-letter:float-left first-letter:text-primary leading-tight pb-8 border-b border-border/40 mb-12" : ""}`}>
                                             {section.content}
                                         </p>
                                     </div>
@@ -391,7 +423,7 @@ const Blog = () => {
                                 </div>
                                 <div className="p-10 pt-4">
                                     <Link
-                                        to={`/tours/${tour.slug}`}
+                                        to={`/packages/${tour.slug}`}
                                         className="w-full flex items-center justify-center gap-3 bg-foreground text-background px-8 py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] hover:bg-primary hover:text-primary-foreground transition-all group-hover:scale-[1.02] active:scale-95 shadow-xl"
                                     >
                                         Explore Tour <ArrowRight className="w-5 h-5" />
