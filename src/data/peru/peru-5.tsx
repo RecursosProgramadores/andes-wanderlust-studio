@@ -26,7 +26,7 @@ export const peru5: Tour = {
     image: destAmazon,
     gallery: [destAmazon, destPeru, heroMachuPicchu],
     shortDescription: "The ultimate wilderness and heritage experience: from the Andean peaks to the world's most iconic river.",
-    styleSummary: "Aventura, Naturaleza, Crucero de Lujo, Arqueológico",
+    styleSummary: "Adventure, Nature, Luxury Cruise, Archaeological",
     description: "After Machu Picchu, the Amazon River stands as one of South America’s most iconic natural treasures. The second-largest river basin in the world flows through breathtaking landscapes rich in exotic flora, extraordinary wildlife, and unmatched biodiversity. It is no surprise that many biologists consider Peru a country truly blessed by nature. Within its vast Amazon region live remarkable endemic species such as pink river dolphins, giant river otters, jaguars, giant paiche, and majestic harpy eagles.\n\nWith this in mind, we have designed a unique journey that combines Peru’s most celebrated destinations. Begin in Lima, the vibrant capital known for its history and world-class gastronomy, continue to the enchanting city of Cusco, and explore the awe-inspiring Machu Picchu. Then, embark on an unforgettable four-day luxury cruise along the Amazon River.\n\nOn board your exclusive vessel, you will observe extraordinary wildlife, explore the jungle alongside expert naturalist guides, and enjoy premium services such as gourmet cuisine, a relaxing jacuzzi, and panoramic observation decks. This exceptional experience seamlessly blends Peru’s cultural wonders with the raw beauty of the Amazon, creating a journey unlike any other.",
     type: ["Luxury", "Adventure", "Nature", "Cultural"],
     badge: "Amazon Exclusive",

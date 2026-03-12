@@ -25,7 +25,7 @@ export const peru11: Tour = {
     image: imgAmazon1,
     gallery: [imgAmazon1, imgAmazon2, heroMachuPicchu],
     shortDescription: "A thrilling expedition for adventure seekers, from the biodiversity of the jungle to the heights of the Andes.",
-    styleSummary: "Aventura, Selva, Historia, Arqueología",
+    styleSummary: "Adventure, Jungle, History, Archaeology",
     description: "Explore the enchanting and mysterious Peruvian Amazon, a world of extraordinary biodiversity where black caimans glide through silent waters and elusive jaguars roam deep within the rainforest. Accompanied by your private local expert, you will navigate the serene waters of the Madre de Dios River and enjoy immersive jungle walks, discovering the secrets of one of the most fascinating ecosystems on Earth.\n\nThis unforgettable adventure continues in Cusco, often called the “Rome of America,” where ancient Inca heritage meets colonial charm. Explore the picturesque Sacred Valley and culminate your journey at the awe-inspiring Machu Picchu, one of the world’s most iconic archaeological wonders.\n\nOur “Adventure Peru’s the Amazon Jungle to Machu Picchu” tour perfectly blends Peru’s rich historical legacy with the breathtaking nature of the Amazon. Your experience is enhanced by handpicked hotels, luxurious jungle lodges, private guided services, exclusive transportation, and carefully selected dining experiences. Best of all, every detail can be fully customized to match your interests and travel style, creating a journey that is uniquely yours.",
     type: ["Adventure", "Nature", "Luxury", "Cultural"],
     badge: "Amazon & Andes",

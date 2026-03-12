@@ -22,7 +22,7 @@ export const ecuador8: Tour = {
     image: imgGalapagos1,
     gallery: [imgGalapagos1, imgGalapagos2, imgAmazon],
     shortDescription: "A revitalizing journey through Ecuador's 'Avenue of the Volcanoes' with a focus on relaxation and history.",
-    styleSummary: "Naturaleza, Relajación, Termas, Volcanes",
+    styleSummary: "Nature, Relaxation, Hot Springs, Volcanoes",
     description: "We designed this route specifically if you want to get to know Ecuador in a new way. Everything starts with a visit to Ecuador’s lovely capital, Quito, with its dreamy monasteries, churches, and colonial squares. You will easily understand why Quito was designated as a UNESCO World Heritage Site. Of course, our knowledgeable local guide will be there to assist you at any moment. Following this, we’ll be able to appreciate the highest active volcano in the world, Cotopaxi, before relaxing and enjoying the natural waters in the lovely village of Baños, 194 kilometers south of Quito. This village is well-known for its baths and waterfalls. We’ll return to Quito after the day for some well-deserved relaxation.\n\nThe next day, we board a flight to Cuenca, Ecuador’s most picturesque colonial city. Its picturesque lanes, squares, churches, and colonial architecture transport us to a time when Spanish and Andean architectural styles coexisted in one city. As you can see, this tour will provide an amazing cultural and natural experience for those looking for something unique in Ecuador. Of course, everything is completely customizable; simply contact our travel experts!",
     type: ["Luxury", "Nature", "Relaxation", "Cultural"],
     badge: "Relaxation & Adventure",

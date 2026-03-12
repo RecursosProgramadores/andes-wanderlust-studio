@@ -21,7 +21,7 @@ export const bolivia15: Tour = {
     image: imgUyuni1,
     gallery: [imgUyuni1, imgSunIsland, imgMoonIsland, imgBolivia],
     shortDescription: "An essential high-altitude escape focusing on Bolivia's most iconic landscapes.",
-    styleSummary: "Naturaleza, Cultura, Paisajes, Altiplano",
+    styleSummary: "Nature, Cultural, Landscapes, Plateau",
     description: "The magical altitude city of La Paz is waiting for you with its Witch Markets, beautiful squares, cable car with amazing views of the city, museums with relics of ancient Aymara history, architecture, and much more. A charming lagoon that touches the sky and guards mysterious islands with ancient cultures that are still in force. And also a visit to the Uyuni salt flat where you can play with perspective and take spectacular photos of a sea of salt, perfectly horizontal and solidified, under the purest blue skies.\n\nThe best of Bolivia is at your fingertips with our tour “Discover Bolivia and the Salar de Uyuni”. We start in the magical city of La Paz then, navigate through the world’s highest freshwater lagoon called Lake Titicaca, and discover fantastic islands with kind inhabitants. After, we’ll arrive at the famous Uyuni Salt Flat and its charming otherworldly landscape that is like something from an alien planet. The best of all is that everything is customizable. For this reason, get in touch with one of our travel advisors and start making your dreams come true.",
     type: ["Luxury", "Adventure", "Nature", "Cultural"],
     badge: "Core Experience",

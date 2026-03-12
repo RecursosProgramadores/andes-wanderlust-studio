@@ -22,7 +22,7 @@ export const bolivia14: Tour = {
     image: imgUyuni1,
     gallery: [imgUyuni1, imgSunIsland, imgMoonIsland, imgUyuni3],
     shortDescription: "A deep dive into Bolivia's colonial history and surreal natural wonders.",
-    styleSummary: "Cultura, Historia, Paisajes, Aventura",
+    styleSummary: "Culture, History, Landscapes, Adventure",
     description: "If you want to discover Bolivia in a different way, this journey is for you! In addition to visiting the fantastic Lake Titicaca with its Sun and Moon islands, and charming people, and Uyuni Salt Flat with its dream landscapes of white land and turquoise sky, you will visit new Bolivian sceneries. Potosi, the mythic colonial silver mines with its mining market frozen in time, its church of San Francisco, its wonderful mirror lagoons, natural geysers, and its famous Dali desert.\n\nThis new form to visit Bolivia is totally customizable with the support of our expert travel consultant and our experience in the market. For all these reasons, our tour “A Memorable Bolivia journey” promises to be unforgettable, full of good memories. We are always attentive to your desires. Visit Bolivia with us!",
     type: ["Luxury", "Cultural", "History", "Nature"],
     badge: "Bestseller",

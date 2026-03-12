@@ -25,7 +25,7 @@ export const peru12: Tour = {
     image: imgMachuPicchu,
     gallery: [imgMachuPicchu, imgAdventure, heroMachuPicchu],
     shortDescription: "The world's most famous trek, elevated with luxury camping, gourmet meals, and expert local guides.",
-    styleSummary: "Aventura, Trekking, Historia, Arqueología",
+    styleSummary: "Adventure, Trekking, History, Archaeology",
     description: "Follow the thousand-year-old path by which the Incas once reached Machu Picchu. The wonderful experience of the Inca Trail ensures that you travel through the most beautiful landscapes of the Andean Sierra and feel the contrast with the Peruvian Jungle, passing ancient Inca remains and enjoying the amazing endemic fauna. To then crown this experience by arriving at Machu Picchu and of course, a visit to the ancient Inca capital, Cusco, with its beautiful Inca palaces, baroque-style colonial churches, and its beautiful Sacred Valley of the Incas, an amazing experience is guaranteed.\n\nOur “Wonders of the Inca Trail to Machu Picchu” tour will give you an unforgettable experience on the famous Inca Trail in a private and exclusive way. In addition, the hotels that you will have in Cusco, Machu Picchu and the Sacred Valley are of the highest quality (4-5 star hotels), as well as staff, guides and private transportation. In other words, a luxury and private service, as only you deserve.",
     type: ["Adventure", "Luxury", "Trekking", "Cultural"],
     badge: "Iconic Trek",

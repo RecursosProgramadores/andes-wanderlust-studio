@@ -48,41 +48,41 @@ export const destinations = [
 export const testimonials = [
   {
     name: "Hector B",
-    location: "Escrita el 4 de abril de 2024",
-    title: "Excelente tour",
-    text: "Todo muy organizado, los guías excelentes y con muy buena disposición, nos recogían a la hora indicada, fue un viaje increíble. Recomendados 100%.",
+    location: "Written on April 4, 2024",
+    title: "Excellent tour",
+    text: "Everything was very organized, the guides were excellent and had a great attitude. They picked us up at the indicated time; it was an incredible trip. 100% recommended.",
     rating: 5,
-    response: "¡Muchas gracias por tu comentario! Nos alegra saber que disfrutaste de un viaje increíble y que nuestra organización y guías cumplieron con tus expectativas. (Respuesta del 16 de setiembre de 2024)"
+    response: "Thank you so much for your comment! We are glad to hear that you enjoyed an incredible trip and that our organization and guides met your expectations. (Response on September 16, 2024)"
   },
   {
     name: "Dante P",
-    location: "Escrita el 9 de noviembre de 2022",
-    title: "Viaje en familia.",
-    text: "Excelente servicio, seriedad y puntualidad en todos los tours. Cada tours acompañado de muy buenos guías turísticos, en explicación y atención. Todo esto hizo que el viaje sea muy placentero. Muy recomendable!!!.",
+    location: "Written on November 9, 2022",
+    title: "Family trip",
+    text: "Excellent service, professional and punctual in all tours. Each tour was accompanied by very good tour guides, both in explanation and attention. All of this made the trip very pleasant. Highly recommended!!!.",
     rating: 5,
-    response: "¡Muchísimas gracias por tu amable reseña! Nos hace muy felices saber que tu viaje en familia fue placentero y que apreciaste la puntualidad y calidad de nuestros guías. (Respuesta del 16 de setiembre de 2024)"
+    response: "Thank you very much for your kind review! It makes us very happy to know that your family trip was pleasant and that you appreciated the punctuality and quality of our guides. (Response on September 16, 2024)"
   },
   {
     name: "Paul G",
-    location: "Escrita el 3 de setiembre de 2022",
-    title: "Cumplen con todo que ofrecen.",
-    text: "Todo excelente con Leading Peru Travel. Muy recomendado. Nos llevaron a Machupicchu, todo dentro de los horarios y servicios ofrecidos.",
+    location: "Written on September 3, 2022",
+    title: "They fulfill everything they offer",
+    text: "Everything was excellent with Leading Peru Travel. Highly recommended. They took us to Machu Picchu, everything within the schedules and services offered.",
     rating: 5,
-    response: "¡Muchas gracias por tu excelente reseña! Nos esforzamos por cumplir cada promesa y nos alegra que tu experiencia en Machu Picchu fuera perfecta. (Respuesta del 16 de setiembre de 2024)"
+    response: "Thank you very much for your excellent review! We strive to fulfill every promise and are glad your experience in Machu Picchu was perfect. (Response on September 16, 2024)"
   },
   {
     name: "olivia d",
-    location: "Escrita el 20 de junio de 2018",
-    title: "Una agencia muy cercana al cliente",
-    text: "Viajamos en familia y descubrimos que nos trataron más como amigos que como clientes... Gladys siempre respondería de inmediato, educadamente... Una agencia perfecta. Mis criterios son simples si está de vacaciones y se siente presionado por la agencia, entonces no son vacaciones. Con Leading Peru esto nunca sucederá...",
+    location: "Written on June 20, 2018",
+    title: "An agency very close to the client",
+    text: "We traveled as a family and found that they treated us more like friends than clients... Gladys would always respond immediately, politely... A perfect agency. My criteria are simple: if you are on vacation and feel pressured by the agency, then it's not a vacation. With Leading Peru this will never happen...",
     rating: 5,
     response: "Thank you very much for your kind words! We pride ourselves on the personal touch and treating our guests like family. (Response on September 16, 2024)"
   },
   {
     name: "Leah C",
-    location: "Escrita el 12 de junio de 2018",
-    title: "Viaje de un día a Machu Picchu",
-    text: "Utilizamos para el Perú lleva un viaje de un día a Machu Picchu... Todo el proceso ha ido muy bien... La única pega es nuestro guía no estaba allí cuando nos bajamos... pero sucedió y nos alegramos de que lo hizo. Una vez con el guía de habla inglesa... todo fue realmente genial...",
+    location: "Written on June 12, 2018",
+    title: "One day trip to Machu Picchu",
+    text: "We used them for a one-day trip to Machu Picchu... The whole process went very well... The only downside was our guide was not there when we got off... but it was sorted and we were glad it was. Once with the English-speaking guide... everything was really great...",
     rating: 4,
     response: "Thank you so much for your detailed review! We appreciate your honesty and are glad that despite the initial guide hiccup, the rest of your experience was great. (Response on September 16, 2024)"
   },

@@ -144,7 +144,7 @@ const TourDetail = () => {
                     >
                       {/* Day label */}
                       <div className={`w-14 md:w-20 pt-1 text-sm font-bold shrink-0 uppercase tracking-widest flex items-center h-fit transition-colors ${activeDay === day.day ? "text-primary scale-110" : "text-foreground"}`}>
-                        Día {day.day}
+                        Day {day.day}
                       </div>
 
                       {/* Timeline Line & Dot */}
@@ -332,13 +332,13 @@ const TourDetail = () => {
                     <div className="space-y-4">
                       <div className="flex items-center gap-3 text-foreground/80">
                         <Calendar className="w-5 h-5 text-primary" />
-                        <span className="font-medium">{tour.duration} días / {tour.nights || (tour.duration - 1)} noches</span>
+                        <span className="font-medium">{tour.duration} days / {tour.nights || (tour.duration - 1)} nights</span>
                       </div>
 
                       <div className="flex items-start gap-3 text-foreground/80">
                         <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                         <div>
-                          <p className="text-xs text-muted-foreground uppercase font-bold tracking-wider mb-1">Destinos visitados:</p>
+                          <p className="text-xs text-muted-foreground uppercase font-bold tracking-wider mb-1">Destinations visited:</p>
                           <span className="text-sm leading-snug block">{tour.destinations.join(", ")}</span>
                         </div>
                       </div>
@@ -347,7 +347,7 @@ const TourDetail = () => {
                         <div className="flex items-start gap-3 text-foreground/80">
                           <Star className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                           <div>
-                            <p className="text-xs text-muted-foreground uppercase font-bold tracking-wider mb-1">Estilo:</p>
+                            <p className="text-xs text-muted-foreground uppercase font-bold tracking-wider mb-1">Style:</p>
                             <span className="text-sm leading-snug block">{tour.styleSummary}</span>
                           </div>
                         </div>
@@ -404,7 +404,7 @@ const TourDetail = () => {
               <div className="flex flex-col gap-4">
                 <div className="text-center">
                   <h3 className="text-md md:text-lg font-bold text-foreground leading-tight tracking-tight px-4">
-                    {tour.subtitle} - {tour.duration} Días / {tour.nights || (tour.duration - 1)} Noches
+                    {tour.subtitle} - {tour.duration} Days / {tour.nights || (tour.duration - 1)} Nights
                   </h3>
                 </div>
 
@@ -415,7 +415,7 @@ const TourDetail = () => {
                     rel="noopener noreferrer"
                     className="flex-1 flex items-center justify-center bg-[#25D366] text-white rounded-xl font-bold text-base md:text-lg shadow-button hover:brightness-110 active:scale-95 transition-all duration-200 uppercase tracking-wide px-4 text-center"
                   >
-                    Cotización personalizada
+                    Personalized quote
                   </a>
                 </div>
               </div>

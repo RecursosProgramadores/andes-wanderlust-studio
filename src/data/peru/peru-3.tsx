@@ -28,9 +28,9 @@ export const peru3: Tour = {
     image: imgColcaCanyon,
     gallery: [destPeru, heroMachuPicchu, imgTiticaca, imgColcaCanyon],
     shortDescription: "Completely discover the wonders of Peru, the Andean Country par excellence of South America.",
-    styleSummary: "Boutique, Cultural, Arqueológico, Paisajístico",
+    styleSummary: "Boutique, Cultural, Archaeological, Scenic",
     description: "Completely discover the wonders of Peru, the Andean Country par excellence of South America. Explore the fantastic colonial historic center of Lima with its beautiful churches and squares. Continue the adventure in Arequipa, the white city at the foot of Misti volcano, and be fascinated by the deep Colca Canyon. Follow the route of the ancestors of the Incas and reach the highest freshwater lake in the world, navigate its waters, and discover remote islands with their fantastic stories. Lastly, crown this tour with a visit to the “Rome of America” Cusco, losing yourself among its narrow stone streets, charming colonial temples, and beautiful places in its Sacred Valley. As if this were not enough, Machu Picchu will be the cherry on top of this unforgettable experience.\n\nOur “Colca Canyon to Machu Picchu Secrets of the Peruvian Andes” tour is our most complete experience in Andean lands backed by luxury hotels and restaurants, private guides, and exclusive transportation. That is exclusivity and luxury throughout your tour of Lima, Arequipa, Colca Canyon, Puno, Lake Titicaca, Cusco, Sacred Valley, and the magnificent Machu Picchu. Everything you imagine in a single tour and fully customizable!",
-    type: ["Luxury", "Adventure", "Cultural", "Arqueológico"],
+    type: ["Luxury", "Adventure", "Cultural", "Archaeological"],
     badge: "Most Complete",
     included: [
         "1 night in Lima, 1 night in Arequipa, 1 night in Colca Canyon, 2 nights in Puno, 2 nights in Cusco, 2 nights in Sacred Valley, 1 night in Cusco",

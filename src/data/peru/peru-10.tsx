@@ -22,7 +22,7 @@ export const peru10: Tour = {
     image: imgLimaCity,
     gallery: [imgLimaCity, imgCuscoCity, heroMachuPicchu],
     shortDescription: "A journey for the palate, exploring the flavors that made Peru the world's leading culinary destination.",
-    styleSummary: "Gourmet, Cultura, Historia, Paisajes",
+    styleSummary: "Gourmet, Culture, History, Landscapes",
     description: "Peruvian gastronomy has earned its place among the finest in the world. Today, when diners consider the great culinary traditions — Italian, French, Mexican, Japanese, Chinese, or Thai — Peruvian cuisine proudly stands alongside them. With a history shaped by more than 500 years of cultural fusion, Peru has transformed its rich biodiversity and heritage into one of the most exciting food scenes on the planet.\n\nFor this reason, Machupicchu Travel Tour has designed a special journey that begins in Lima, the vibrant Peruvian capital, home to a stunning historic center and Latin America’s gastronomic capital. On your second day, you will enjoy an exclusive culinary tour, visiting some of the country’s most renowned restaurants and tasting iconic flavors crafted from centuries-old traditions and fresh local ingredients.\n\nWith a satisfied palate and a joyful heart, your adventure continues in Cusco, where majestic Inca temples and elegant colonial churches tell the story of Peru’s extraordinary past. Explore the enchanting Sacred Valley and culminate your journey at the breathtaking Machu Picchu — the crown jewel of the Andes.",
     type: ["Luxury", "Culinary", "Cultural"],
     badge: "For Foodies",

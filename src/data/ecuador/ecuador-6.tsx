@@ -26,7 +26,7 @@ export const ecuador6: Tour = {
     image: imgGalapagos1,
     gallery: [imgGalapagos1, imgMachuPicchu, imgGalapagos2, imgLimaCity],
     shortDescription: "A legendary 14-day double-country expedition combining the unique evolution of Galápagos with the Incan majesty of Machu Picchu.",
-    styleSummary: "Aventura, Naturaleza, Crucero Galápagos, Arqueológico",
+    styleSummary: "Adventure, Nature, Galápagos Cruise, Archaeological",
     description: "Being able to visit two of the most important attractions in vast South America in a single journey is priceless. Therefore, we invite you to witness the best of Ecuador by exploring its wondrous Galapagos islands onboard exclusive yachts with all services included. You’ll border the coast of the biggest and most important Galapagos islands. Of course, during the navigation, you’ll be touching dry land and taking long walks to spot the amazing wildlife with our local expert. Moreover, the choice of activities is endless, because you will be able to try amazing water sports like snorkeling, kayaking, panga riding, hiking, and paddle boarding among others\n\nPeru also awaits you! After a direct flight from Ecuador to Peru, you will arrive in Lima to find, in the company of our expert, an enchanting colonial city at the edge of the sea. Finally, view the mystical Inca culture through its imposing palaces and temples in the south which will be waiting for you. Cusco, the ancient Inca capital, the Sacred Valley, and the unforgettable Machu Picchu are the icing on the cake. All in one in the most complete experience in South America, now at your fingertips!",
     type: ["Luxury", "Adventure", "Nature", "Cultural"],
     badge: "Epic 2-Country Tour",

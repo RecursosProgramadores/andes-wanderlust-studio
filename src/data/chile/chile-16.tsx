@@ -30,7 +30,7 @@ export const chile16: Tour = {
     image: imgMachuPicchu,
     gallery: [imgMachuPicchu, imgUyuni1, imgMoonValley, imgSunIsland],
     shortDescription: "An epic 15-day journey across the heart of the Andes, spanning Peru, Bolivia, and Chile.",
-    styleSummary: "Aventura, Cultura, Paisajes, Historia",
+    styleSummary: "Adventure, Culture, Landscapes, History",
     description: "The Peru Bolivia Chile 15-Day Tour offers an incredible journey through the most iconic destinations of these three countries. This 15-day adventure takes you from the ancient ruins of Machu Picchu to the vast Uyuni Salt Flats and the stunning landscapes of the Atacama Desert. The Peru Bolivia Chile 15-Day Tour is perfect for travelers looking to immerse themselves in the cultural and natural wonders of South America.",
     type: ["Adventure", "Cultural", "Nature", "Luxury"],
     badge: "Most Comprehensive",

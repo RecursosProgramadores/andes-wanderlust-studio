@@ -28,7 +28,7 @@ export const bolivia7: Tour = {
     image: imgUyuni1,
     gallery: [imgUyuni1, imgSunIsland, imgMachuPicchu, heroMachuPicchu],
     shortDescription: "A grand 13-day expedition tracing the ancient high-altitude roads from the salt flats of Bolivia to the Incan wonders of Peru.",
-    styleSummary: "Aventura, Paisajes, Cultural, Arqueológico",
+    styleSummary: "Adventure, Landscapes, Cultural, Archaeological",
     description: "The best of two Andean worlds closer to you. The imposing Inca culture developed in Peru but was born in Bolivia, in the center of the Tiahuanaco culture and you will be able to know both. We will begin in the Bolivian country by visiting the enchanting La Paz with its beautiful witch markets, squares, and colonial streets, without mentioning its cable car with amazing views of the city. After, you will go to the mysterious Lake Titicaca to navigate and discover fantastic islands and kind people. Then, you will fly to Uyuni and enjoy the magical landscapes of an extensive white salt flat that merges into the turquoise sky on the horizon.\n\nTo finalize, Peru will be the icing on the cake, with its imposing Cusco, the ancient Inca empire capital. Besides Sacred Valley and its ancient Inca palaces nestled in each mountain and hill that surrounds the valley. Of course, Machu Picchu cannot be missed on this trip. And, as a bonus, the visit to beautiful Lima city, the Peruvian capital, will be the finishing touch with which we will close this magical experience.",
     type: ["Luxury", "Adventure", "Nature", "Cultural"],
     badge: "Andean Crossing",

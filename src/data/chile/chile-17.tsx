@@ -33,7 +33,7 @@ export const chile17: Tour = {
     image: imgMachuPicchu,
     gallery: [imgMachuPicchu, imgUyuni1, imgAtacama, imgLimaCity],
     shortDescription: "A curated adventure through iconic destinations: Lima, Ica, Paracas, Nazca, Machu Picchu, Titicaca, and Uyuni.",
-    styleSummary: "Historia, Naturaleza, Aventura, Gastronomía",
+    styleSummary: "History, Nature, Adventure, Gastronomy",
     description: "Embarking on a tour 15 days Peru Bolivia Chile journey through the heart of South America promises an immersive experience into the rich tapestry of ancient civilizations, breathtaking landscapes, and vibrant cultures.\n\nThis curated adventure takes you through iconic destinations such as Lima, Paracas, Nazca, Machu Picchu, the Sacred Valley, Lake Titicaca, Uyuni Salt Flats, La Paz, Atacama Desert, and Santiago, offering a blend of history, nature, and modernity.",
     type: ["Luxury", "Cultural", "History", "Nature"],
     badge: "Bucket List",

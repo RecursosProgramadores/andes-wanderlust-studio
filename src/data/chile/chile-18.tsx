@@ -30,7 +30,7 @@ export const chile18: Tour = {
     image: imgUyuni1,
     gallery: [imgUyuni1, imgMachuPicchu, imgMoonValley, imgLimaCity],
     shortDescription: "An extraordinary 16-day journey through the heart of South America, combining history, salt flats, and deserts.",
-    styleSummary: "Aventura, Paisajes, Cultura, Expedición",
+    styleSummary: "Adventure, Landscapes, Culture, Expedition",
     description: "This extraordinary journey through Peru, Bolivia, and Chile combines rich history, breathtaking landscapes, and vibrant cultures. The adventure begins in Lima, Peru’s elegant capital, where colonial architecture and world-renowned gastronomy set the stage for the trip.\n\nYou then travel to Cusco and the Sacred Valley, exploring impressive Inca and colonial sites before visiting the legendary Machu Picchu, one of the New Seven Wonders of the World. The journey continues across the Andean highlands to Lake Titicaca, where you discover ancient traditions and sacred islands before heading to La Paz and the surreal landscapes of Bolivia. A highlight is the spectacular Salar de Uyuni, the largest salt flat on Earth.\n\nCrossing into Chile, you explore the dramatic desert scenery of San Pedro de Atacama, including the stunning Valle de la Luna, before concluding your journey in cosmopolitan Santiago.",
     type: ["Adventure", "Nature", "Cultural", "Luxury"],
     badge: "Ultimate Experience",

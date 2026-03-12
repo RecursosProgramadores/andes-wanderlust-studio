@@ -25,9 +25,9 @@ export const peru4: Tour = {
     image: imgNazca,
     gallery: [destPeru, heroMachuPicchu, imgNazca],
     shortDescription: "Solve the riddles of the past from the ancient lines in the sand to the stone citadels of the cloud forest.",
-    styleSummary: "Aventura, Misterio, Arqueológico, Lujo",
+    styleSummary: "Adventure, Mystery, Archaeological, Luxury",
     description: "Wander through narrow streets, elegant plazas, and historic colonial churches along the shores of the Pacific Ocean in Lima. Then, take to the skies for a breathtaking flight over the mysterious Nazca Lines, where you will witness their extraordinary shapes carved into the desert thousands of years ago. Yet the desert holds more than ancient enigmas — feel the thrill of adventure as you surf down towering sand dunes and ride across golden landscapes in a dune buggy.\n\nYour journey continues in Cusco, the legendary “Rome of America,” where majestic Inca palaces, colonial churches, and impressive stone fortresses rise high in the Andes. Explore the enchanting Sacred Valley and culminate your adventure at the awe-inspiring Machu Picchu, one of the world’s most extraordinary archaeological treasures.\n\nOn our “Desert Mysteries to Inca Legends Nazca Lines & Cusco” tour, you will experience Lima’s historic center in complete privacy and comfort, staying at carefully selected luxury hotels and dining at exceptional restaurants. In addition to your Nazca flight, enjoy thrilling desert activities such as sandboarding and dune buggy rides.\n\nAs with all our journeys, every detail can be tailored to your preferences — from the finest accommodations to personalized services — ensuring a seamless and unforgettable travel experience.",
-    type: ["Luxury", "Adventure", "Arqueológico", "Cultural"],
+    type: ["Luxury", "Adventure", "Archaeological", "Cultural"],
     badge: "Mystery & Adventure",
     included: [
         "1 night in Lima, 1 night in Paracas, 1 night in Lima, 2 nights in Sacred Valley, 2 nights in Cusco",
